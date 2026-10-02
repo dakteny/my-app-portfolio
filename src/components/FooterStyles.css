@@ -1,0 +1,59 @@
+.footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 0 2rem;
+}
+
+/* LEFT SIDE */
+.left {
+  width: 50%;
+}
+
+/* RIGHT SIDE */
+.right {
+  width: 50%;
+}
+
+.location,
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.right h4 {
+  margin-bottom: 1rem;
+}
+
+.right p {
+  line-height: 1.6;
+}
+
+.social {
+  margin-top: 2rem;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}
